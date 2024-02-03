@@ -6,6 +6,8 @@ public class Cat: IAnimal
     private string colour;
     private int age;
     
+    
+    
     public void SetName(string _name)
     {
         this.name = _name;
@@ -23,7 +25,6 @@ public class Cat: IAnimal
     
     
     
-    
     public string GetName()
     {
         return this.name;
@@ -38,6 +39,7 @@ public class Cat: IAnimal
     {
         return this.age;
     }
+    
     
 
     public void Eat()

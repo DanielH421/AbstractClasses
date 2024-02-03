@@ -6,11 +6,13 @@ public class Dog: IAnimal
     private string colour;
     private int age;
     
+    
+    
     public void SetName(string _name)
     {
         this.name = _name;
     }
-
+    
     public void SetColour(string _colour)
     {
         this.colour = _colour;
@@ -20,7 +22,6 @@ public class Dog: IAnimal
     {
         this.age = _age;
     }
-    
     
     
     
@@ -39,12 +40,13 @@ public class Dog: IAnimal
         return this.age;
     }
     
+    
 
     public void Eat()
     {
         Console.WriteLine("Dogs eat meat.");
     }
-
+    
     public void Cry()
     {
         Console.WriteLine("Woof!");
