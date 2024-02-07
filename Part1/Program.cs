@@ -44,9 +44,6 @@ public class Program
         {
             return new Dog(name, colour, age);
         }
-
-        // If this gets returned. Something went seriously wrong
-        return null;
     }
 
 
