@@ -6,19 +6,42 @@ public class Program
     { 
         // Create the animal objects. cast to the proper type as well.
         Dog dog = (Dog) GetUserAnimal("dog");
-        Cat cat = (Cat) GetUserAnimal("cat");
         
-        Console.WriteLine("\n");
-        
+        Console.WriteLine("");
         PrintAnimalInfo(dog);
         dog.Eat();
         dog.Cry();
+        Console.WriteLine("\n");
+        
+        
+        Cat cat = (Cat) GetUserAnimal("cat");
         
         Console.WriteLine("");
-        
         PrintAnimalInfo(cat);
         cat.Eat();
         cat.Cry();
+        Console.WriteLine("");
+
+
+        List<IAnimal> animals = new List<IAnimal>();
+        
+        animals.Add(dog);
+        animals.Add(cat);
+        
+        // some extra animals for example.
+        Cat darrell = new Cat();
+        darrell.SetName("Darrell");
+        Dog john = new Dog();
+        john.SetName("John");
+        
+        animals.Add(darrell);
+        animals.Add(john);
+
+        foreach (var animal in animals)
+        {
+            Console.Write(animal.GetName() + ", ");
+        }
+
     }
         
     
